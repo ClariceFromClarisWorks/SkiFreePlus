@@ -14,6 +14,15 @@ The Macintosh implementation is in `ports/macintosh/`. The original upstream tre
 
 The application requests a 1.5 MB memory partition (both minimum and preferred). The remaining RAM must accommodate the System and Finder. The 2 MB configuration has been exercised in emulation; extensions and MultiFinder applications can leave too little free memory, so additional installed RAM may be needed in those setups.
 
+## Download and install
+
+Download compiled disk images from [GitHub Releases](https://github.com/ClariceFromClarisWorks/SkiFreePlus/releases). The ZIP includes both images, a MacBinary application, installation notes and checksums.
+
+- **SkiFreePlus.dsk** — 800 KB HFS floppy image for a compatible emulator or classic-Mac floppy-writing workflow.
+- **HD10_512_SkiFreePlus.hda** — application-only hard-disk image for BlueSCSI. With the Mac shut down, copy it to the SD card alongside your existing boot disk. Its filename selects SCSI ID 1; change that ID if it conflicts with another image/device. Boot your own System disk, then open the SkiFree+ volume.
+
+Both images contain the game only: **neither is bootable, and no System software or ROM is included**. The separate `.bin` file requires MacBinary-aware decoding to preserve the application's resource fork and Finder icon metadata.
+
 ## Build and test
 
 Run `./scripts/build-macintosh.sh` with Docker available. It uses a pinned Retro68 image and creates `build/macintosh/SkiFreePlus.bin` (MacBinary application) and `SkiAuto.bin` (automated diagnostic application), with raw Retro68 disk outputs alongside them. Use the MacBinary files for installation: the script repairs their Finder bundle flags for icon recognition; it does not retrofit those flags inside the raw generated floppy images. ROMs and operating-system disks are not needed to compile and are not included. Asset regeneration is optional; the generated sprite banks are checked in.

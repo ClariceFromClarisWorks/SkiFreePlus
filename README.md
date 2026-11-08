@@ -4,7 +4,7 @@ A monochrome compact-Mac continuation of SkiFree, targeting the Macintosh SE and
 
 ![SkiFree+ running on a Macintosh SE](docs/images/skifreeplus-macintosh-se.png)
 
-*Photo by ClariceFromClarisWorks, AI-retouched for presentation to reduce CRT camera banding and adjust lighting.*
+*Photo by ClariceFromClarisWorks.*
 
 This repository preserves the history of [jeff-1amstudios/skifree_sdl](https://github.com/jeff-1amstudios/skifree_sdl), which derives from [Eric Fry’s decompilation](https://github.com/yuv422/skifree_decomp). Original SkiFree is by [Chris Pirih](https://ski.ihoc.net/). This is a community continuation, not an official release by those authors.
 

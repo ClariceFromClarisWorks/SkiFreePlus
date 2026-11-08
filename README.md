@@ -2,6 +2,10 @@
 
 A monochrome compact-Mac continuation of SkiFree, targeting the Macintosh SE and System 6 at a nominal 25 simulation steps per second. The fullscreen playfield is 512 × 342. Physical SE testing is encouraging; consistent timing on every supported configuration is not established.
 
+![SkiFree+ running on a Macintosh SE](docs/images/skifreeplus-macintosh-se.png)
+
+*Photo by ClariceFromClarisWorks, AI-retouched for presentation to reduce CRT camera banding and adjust lighting.*
+
 This repository preserves the history of [jeff-1amstudios/skifree_sdl](https://github.com/jeff-1amstudios/skifree_sdl), which derives from [Eric Fry’s decompilation](https://github.com/yuv422/skifree_decomp). Original SkiFree is by [Chris Pirih](https://ski.ihoc.net/). This is a community continuation, not an official release by those authors.
 
 The Macintosh implementation is in `ports/macintosh/`. The original upstream tree is retained for history and comparison; its README is `README.upstream.md`.

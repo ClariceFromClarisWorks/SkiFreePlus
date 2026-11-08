@@ -1,0 +1,3 @@
+JUMPCAM_CLICK,13_to_18_to_19_to_13,live_pose,PASS
+AIR_INSET,8844,boundaries_all_poses_camera_positions,no_state_changes,PASS
+CONTROLS,32970,0

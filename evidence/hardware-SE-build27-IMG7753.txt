@@ -1,0 +1,23 @@
+Build 27 — physical Macintosh SE diagnostic photo, received 2026-11-08
+Source: IMG_7753.heic (user-supplied photograph). Values transcribed visually.
+Current RAM/System/extensions and route were not specified with this image.
+Earlier user context: SE with 2.5 MB RAM, System 6.0.8; not re-confirmed here.
+
+Frames: 1590; play time: 65.3 s
+Average FPS (ticks): 24.3
+FPS windows: 22.3 to 25.5
+Timer M: 22.3 to 25.6
+Combined updates: 40; maximum steps: 2
+Long gaps: 47; short gaps: 0; longest: 5 ticks
+Behind schedule: 433 frames; maximum debt: 2
+Gap histogram (0/1/2/3/4/5/6+ ticks): 0/0/897/644/42/5/0
+Paused time excluded.
+
+Interpretation: 47 of 1588 measured intervals (2.96%) lasted 4 or 5 ticks,
+about 67 or 83 ms. The other intervals were normal 2/3-tick cadence.
+No 0/1-tick burst presentations were recorded. Combined steps preserve
+simulation progression while omitting intermediate drawings. 433 behind-
+schedule frames are not 433 dropped frames. Two FPS measurements agree
+closely; this capture supports real residual pacing delays rather than a
+large disagreement between counters. It does not identify the slow subsystem.
+The sample is close to nominal 25 fps but does not demonstrate solid 25 fps.

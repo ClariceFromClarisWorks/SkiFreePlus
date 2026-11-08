@@ -1,0 +1,15 @@
+app.c: lexical code unchanged except requested About credits
+sim.c: lexical code unchanged
+gfx.c: lexical code unchanged
+engine.c: lexical code unchanged
+deadline_clock.h: lexical code unchanged
+native_dialog.h: lexical code unchanged
+kernels.S: lexical code unchanged
+compiled.S: lexical code unchanged
+original-bank.S: lexical code unchanged
+Pinned Retro68 build: PASS (playable and diagnostic applications).
+SkiAuto object .text* binary extractions match build 27 for app.c, sim.c, gfx.c and kernels.S. Full MacBinary packaging differs; no byte-identical whole-application claim.
+Host suite: 11 programs passed under AddressSanitizer and UndefinedBehaviorSanitizer.
+No new emulator performance run; lexical comparison confirms unchanged diagnostic logic.
+Updated About layout has not received a new visual emulator check.
+No GitHub upload or release publication was performed during source preparation.

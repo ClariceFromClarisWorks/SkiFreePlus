@@ -1,0 +1,4 @@
+data 'ICN#' (128) { $"7ffffffe8070002180c0003181000019820e0005841100c58a20002395400013b8c03f83c8e3c063905c001d904ff3fdd0580e03b76800039068000395683f0392586983974f90fd9048120596481e05954800059044000990443f09be420011a2470c399c488045a24a40859c491f05a24880059c7c000fa24200117ffffffe7ffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7ffffffe" };
+data 'BNDL' (128) { $"534b46520000000149434e2300000000008046524546000000000080" };
+data 'FREF' (128) { $"4150504c000000" };
+data 'SKFR' (0) { $"07536b6946726565" };

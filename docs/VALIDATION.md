@@ -1,0 +1,11 @@
+# Release-candidate validation
+
+The comment/credit preparation is based on feature build 27. Implemented modes include free skiing, slalom, tree slalom and freestyle, along with jumps/tricks, other actors, the yeti, scores and native result dialogs. Compact-screen differences include monochrome semantic art, the top HUD, camera look-ahead, jump shadow and jumpcam. Sound is stubbed; complete original-game fidelity is not claimed.
+
+Remaining checks include original-binary RNG/population equivalence and full natural-course acceptance on hardware. The population bounds and recovered logic should not be described as perfectly matching the original without that work. Current feature-build hardware testing is pending. A Plus is a useful slow-path target, but build 27 has not been newly qualified on a physical Plus. The documented minimum is 2 MB installed RAM; 1 MB is unsupported. The SIZE resource requests 1,536 KiB for both minimum and preferred application partitions. The 2 MiB emulator configuration is tested, but that does not guarantee sufficient free memory with arbitrary extensions or MultiFinder applications.
+
+Build 27 normal-speed Snow SE results: seven selected routes, 2,100 drawings, 24.984859–25.022487 measured fps, no short/long gaps and no combined updates in those normal cases. Forced stalls intentionally produced long gaps and combined updates. All 42 cases retained the reference terminal hashes. Jumpcam tests covered 8,844 visibility cases and 22 reference-rendered poses; input tests covered 32,970 cases. Cached inset copying measured 604 ticks in C versus 233 ticks in assembly for 5,000 copies. This is one measured hot path, not proof that all assembly is faster.
+
+Build 26 was also compared in MAME. Those results must not be represented as a MAME run of build 27. Neither emulator result guarantees physical SE timings. For a community release, retain real-hardware D reports, especially diagonal skiing and chairlift passages, and identify RAM, System version and extensions.
+
+This source preparation changes About attribution and source comments/layout. It intentionally adds no gameplay or renderer change. See `PREPARATION-RESULTS.txt` for the checks performed on this prepared tree.

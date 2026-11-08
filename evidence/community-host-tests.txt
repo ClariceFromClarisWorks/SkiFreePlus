@@ -1,0 +1,37 @@
+JUMPCAM_CLICK,13_to_18_to_19_to_13,live_pose,PASS
+AIR_INSET,8844,boundaries_all_poses_camera_positions,no_state_changes,PASS
+scenario 0 updates 10000 frames 10000 merged 0
+scenario 1 updates 10000 frames 10000 merged 0
+scenario 2 updates 10000 frames 9250 merged 750
+DEADLINE_PASS: 500000 deadlines, 60.15Hz rational cadence, tick wrap, bounded catch-up, stalls, physics-step conservation
+CAMERA_PASS,5_resize_requests_fixed_compact_view,1500_updates,easing_and_shadow_boundaries
+FRAME_STATS,PASS: 25Hz, stalls, coalesced steps, pause reset, tick rollover
+DIAGNOSTICS_PASS: cadence, tick rollover, pause exclusion, long/short gaps, debt, inactive, restart
+<repository>/ports/macintosh/tests/hud_format.c:7:59: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+    7 |  for(full=0;full<2;full++){hud_format(a,g,full,1);if(full)sprintf(b,"%ldm  %ldm/s  Style %ld  Time %ld.%lds  %s",(long)g.distance,(long)g.speed,(long)g.style,(long)g.elapsed/1000,labs((long)g.elapsed/100)%10,g.mode==1?"Slalom":g.mode==2?"Tree slalom":g.mode==3?"Freestyle":g.resultMode?"Finished":"Free ski");else sprintf(b,"%s %ld.%lds %ldm %ldpt",g.mode==1?"SS":g.mode==2?"TS":g.mode==3?"FS":g.resultMode?"Done":"Free",(long)g.elapsed/1000,labs((long)g.elapsed/100)%10,(long)g.distance,(long)g.style);if(strcmp(a,b)){puts(a);puts(b);errors++;}}
+      |                                                           ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+<repository>/ports/macintosh/tests/hud_format.c:7:315: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+    7 |  for(full=0;full<2;full++){hud_format(a,g,full,1);if(full)sprintf(b,"%ldm  %ldm/s  Style %ld  Time %ld.%lds  %s",(long)g.distance,(long)g.speed,(long)g.style,(long)g.elapsed/1000,labs((long)g.elapsed/100)%10,g.mode==1?"Slalom":g.mode==2?"Tree slalom":g.mode==3?"Freestyle":g.resultMode?"Finished":"Free ski");else sprintf(b,"%s %ld.%lds %ldm %ldpt",g.mode==1?"SS":g.mode==2?"TS":g.mode==3?"FS":g.resultMode?"Done":"Free",(long)g.elapsed/1000,labs((long)g.elapsed/100)%10,(long)g.distance,(long)g.style);if(strcmp(a,b)){puts(a);puts(b);errors++;}}
+      |                                                                                                                                                                                                                                                                                                                           ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+2 warnings generated.
+HUD_FORMAT,20000,0
+CONTROLS,32970,0
+WIN32_CONTROLS,32970,0
+SCORES_PASS
+TERRAIN,0,seen,0,air_steps,0,max_height,0,landings,0,style,0
+TERRAIN,47,seen,134,air_steps,8,max_height,10,landings,1,style,0
+TERRAIN,48,seen,39,air_steps,16,max_height,32,landings,1,style,0
+TERRAIN,52,seen,24,air_steps,28,max_height,105,landings,1,style,0
+COURSE_CHECK,0

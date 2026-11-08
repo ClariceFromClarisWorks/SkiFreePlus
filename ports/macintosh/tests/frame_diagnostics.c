@@ -1,0 +1,4 @@
+#include <assert.h>
+#include <stdio.h>
+#include "../frame_diagnostics.h"
+int main(void){FrameDiagnostics d;unsigned i;diagnostic_start(&d);diagnostic_frame(&d,0xfffffff0u,0);for(i=1;i<=50;i++)diagnostic_frame(&d,0xfffffff0u+(i*12+4)/5,0);assert(d.frames==51&&d.intervals==50&&d.ticks==120&&diagnostic_fps10(&d)==250&&d.maxGap==3);assert(d.gap[2]+d.gap[3]==50);diagnostic_break(&d);diagnostic_frame(&d,10000,0);assert(d.ticks==120);diagnostic_frame(&d,10006,2);diagnostic_frame(&d,10006,1);diagnostic_frame(&d,10007,0);assert(d.gap[6]==1&&d.gap[0]==1&&d.gap[1]==1&&d.maxGap==6&&d.debtFrames==2&&d.maxDebt==2);d.active=0;diagnostic_frame(&d,999999,9);assert(d.maxDebt==2);diagnostic_start(&d);assert(d.frames==0&&d.maxDebt==0&&d.active);puts("DIAGNOSTICS_PASS: cadence, tick rollover, pause exclusion, long/short gaps, debt, inactive, restart");return 0;}

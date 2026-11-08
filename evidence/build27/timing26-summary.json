@@ -1,0 +1,62 @@
+{
+  "mode0_stress0": {
+    "frames": 2100,
+    "updates": 2100,
+    "combined_draws": 0,
+    "short_intervals": 0,
+    "long_intervals": 0,
+    "fps_timer_min": 24.953407828682543,
+    "fps_timer_max": 24.965663890262924,
+    "max_gap": 3
+  },
+  "mode1_stress0": {
+    "frames": 2100,
+    "updates": 2100,
+    "combined_draws": 0,
+    "short_intervals": 0,
+    "long_intervals": 0,
+    "fps_timer_min": 24.988557323125786,
+    "fps_timer_max": 25.02095296302712,
+    "max_gap": 3
+  },
+  "mode2_stress0": {
+    "frames": 2100,
+    "updates": 2100,
+    "combined_draws": 0,
+    "short_intervals": 0,
+    "long_intervals": 0,
+    "fps_timer_min": 24.984859175339743,
+    "fps_timer_max": 25.02248687487155,
+    "max_gap": 3
+  },
+  "mode0_stress1": {
+    "frames": 2100,
+    "updates": 2100,
+    "combined_draws": 0,
+    "short_intervals": 68,
+    "long_intervals": 42,
+    "fps_timer_min": 24.954933469731454,
+    "fps_timer_max": 24.965792703031397,
+    "max_gap": 7
+  },
+  "mode1_stress1": {
+    "frames": 2100,
+    "updates": 2100,
+    "combined_draws": 0,
+    "short_intervals": 67,
+    "long_intervals": 42,
+    "fps_timer_min": 24.989662609567176,
+    "fps_timer_max": 25.022230166316927,
+    "max_gap": 7
+  },
+  "mode2_stress1": {
+    "frames": 2097,
+    "updates": 2100,
+    "combined_draws": 3,
+    "short_intervals": 0,
+    "long_intervals": 42,
+    "fps_timer_min": 24.900433658957166,
+    "fps_timer_max": 25.00991851685181,
+    "max_gap": 7
+  }
+}
